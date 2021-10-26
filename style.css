@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+   font-family: ariel,helvetica, sans-serif:
+	padding:0;
+	margin:0;
+}
+
+.container{
+	width: 87%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.branding{
+    display: flex;
+}
+
+.brand{
+   position: relative;
+   bottom: 18px;
+   left: 10px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    max-width: 40px;
+    padding-top: 5px;
+}
+
+a{
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+
+a:hover{
+    text-decoration: underline;
+    color: #4275A6;
+}
+
+.brand p{
+    position: relative;
+    bottom: 15px;
+}
+
+/* End of Header*/
+
+/* .main_sec{
+    display: flex;
+}
+
+.main_sec2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    width: 20%;
+} */
+
+.sec_2{
+    position: relative;
+    bottom: 38px;
+    padding-top: 85px;
+    background-image: url(img/bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100rem;
+}
+
+.sec_2b{
+    display: flex;
+}
+
+.sec_2b3 h2{
+    color: white;
+    font-size: 40px;
+    width: 80%;
+
+}
+
+.sec_2b3 p{
+    color: #B7B7AA;
+    width: 95%;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.enrol{
+    color: #FFEECC;
+    font-size: 1.2rem;
+}
+.sec_2b2{
+    
+}
+
+.icons{
+    /* width: 30%;
+    line-height: 3rem; */
+    color: #D6FFFF;
+}
+
+.sec_2c{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    
+}
+
+.sec2_d{
+    text-align: right;
+    color: #D6FFFF;
+    /* position: relative;
+    line-height: 1.8rem; */
+}
+
+
+.form{
+    background-color: #FFFFFF;
+    margin-top: 32px;
+    text-align: center;
+    width: 70%;
+}
+
+.form p{
+    text-align: left;
+    color: #343A40;
+    font-size: 20px;
+    padding-left: 23px;
+    /* width: 70%; */
+
+}
+
+
+input[type=text]{
+    height: 3rem;
+    width: 12rem;
+    outline: none;
+    margin-right: 1rem;
+}
+
+input[type=text]::placeholder{
+    padding-left: 10px;
+}
+
+input[type=email]{
+    height: 3rem;
+    width: 26.5rem;
+    outline: none;
+}
+
+input[type=email]::placeholder {
+    padding-left: 4px;
+}
+
+
+input[type=tel]{
+    height: 3rem;
+    width: 26.5rem;
+    outline: none;
+}
+
+input[type=tel]::placeholder {
+    padding-left: 4px;
+}
+
+.form button{
+    color: #FFF8FA;
+    background-color: #0069D9;
+    height: 3rem;
+    width: 27rem;
+}
+
+.sth{
+    display: flex;
+}
+
+.origin{
+    text-align: center;
+}
+
+.sec_3{
+    background-color: #F9FAFA;
+}
+
+.wurld{
+    position: relative;
+    right: 50px;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box{
+
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 50px 10px 1px red;
+} */
+
+/*      Box shadow
+    The first measurement is L/R
+    The second measurement is T/B
+    The third measurement is thickness/blur effect
+    Then you give it a color
+*/
+
+/* get 2 stikys working */
+
+
+/* input[type=phone]{
+    width: 50em;
+    height: 20em;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow:  5px 5px black;
+} */
+
+
+/* ==git==
+
+-it is a version ctrl system for tracking changes in comp, files
+it is a distributed version ctrl, i.e many developers can work on a single project with out being on same network although there ar other V.C.S that developers must be on same network in order to work on.
+
+- it tracks every single changer made by developers.
+ Usualy when working with git, you wud ave a repository on ur local machine dat u work on and once done  u can push d local repo to a remote repo, like git hub or git bucket and you dont need internet connection to work on a local repo.
+
+ ==concepts of Git==
+
+- it kips track of code history
+-it takes snapshots of ur files
+- u decide wen to take a snapshot by making a commit
+-u can visit any snapshot at any time
+-u can stage files b4 commiting
+
+
+==Basic commands==
+
+- git init
+- git add, to add files 
+-git status, to see wt u ave on d staging area
+- git commit, to take everytin on d staging area to d local repo or git commit -m ''
+-git push, to push ur local repo to remote repo
+-git pull, to pull lates changes on a repo
+-git clone,to copy a remote repo into ur current folder,so if u like a project  on git hub..u simply clone it
+-to add a branch
+git branch (branch name)
+then git checkout ('branch name')
+u can now add a file,add,commit
+-once done wit d branch we can merge it with d master branch,to go bk to master branch git checkout master then git merge (branch name)...den it opens d window for inser,esc and :wq press enter
+*touch README.md
+#heading
+then statement
+
+*git ignore
+touch .gitignore
+also add anoda file 
+then write on the second file and remember to call out the file name on git ignore exactly
+to add a directory,folder on gitignore file use /den d exact folder name
+
+To remove a file
+git rm --cached file name */
+
+/* try to remove a file */
+
+/* 
+==Download $ install Git==
+
+windows-http://git-scm.com/download/win
+
+Mac-http://git-scm.com/download/mac
+
+==To add name and email to awa git==
+ git config --global user.name ''
+ git config --global user.email ''
+ To cheq d name and email
+git config user.name */
