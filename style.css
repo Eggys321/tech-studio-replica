@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/* *{
+    padding:0;
+	margin:0;
+} */
 
 body{
    font-family: ariel,helvetica, sans-serif:
-	padding:0;
+    padding:0;
 	margin:0;
 }
 
@@ -20,6 +24,41 @@ body{
    position: relative;
    bottom: 18px;
    left: 10px;
+}
+.nav{
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu{
+    margin: 0 30px 0 0;
+}
+
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color: grey;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+span{
+    color: #54D17A;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle{
+    display: none;
 }
 
 
@@ -67,13 +106,14 @@ a:hover{
 } */
 
 .sec_2{
-    position: relative;
-    bottom: 38px;
-    padding-top: 85px;
     background-image: url(img/bg\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 100rem;
+    position: relative;
+    bottom: 38px;
+    padding-top: 85px;
+    
 }
 
 .sec_2b{
@@ -299,3 +339,205 @@ Mac-http://git-scm.com/download/mac
  git config --global user.email ''
  To cheq d name and email
 git config user.name */
+
+@media (max-width:320px)  { 
+
+    .container{
+        width: 92%;
+        margin: auto;
+	    overflow: hidden;
+    }
+
+    .branding{
+        display: flex;
+        width: 90%;
+    }
+
+    .branding img{
+        max-width: 40px;
+    }
+
+    .brand p{
+        width: 48%;
+        font-size: 11px;
+    }
+
+     .brand h4{
+        width: 60%;
+        font-size: 15px;
+    }
+
+    header{
+        display: flex;
+        /* height: 20rem; */
+        /* margin-bottom: 10rem; */
+        justify-content: space-between;
+    }
+    label{
+         display: block;
+         cursor: pointer;
+     }
+
+     .menu{
+         text-align: center;
+         width: 100%;
+         display: none;
+    }
+
+     .menu a{
+         display: block;
+         border-bottom: 1px solid #EAEAEB;
+         margin: 0;
+    }
+
+    #toggle:checked + .menu{
+        display: inline;
+        
+    }
+
+    /* end of header */
+
+    .sec_2b{
+        display: block;
+    }
+
+    .sec_2{
+    background-image: url(img/bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    bottom: 38px;
+    padding-top: 8px;
+    background-color: pink;
+    
+}
+
+.sec_2b3 h2{
+    color: white;
+    font-size: 25px;
+    width: 60%;
+
+}
+
+.sec_2b3 p{
+    color: #B7B7AA;
+    width: 80%;
+    font-size: 15px;
+    /* line-height: 2rem; */
+}
+.sec_2c{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    
+}
+
+.form{
+    background-color: #FFFFFF;
+    margin-top: 32px;
+    text-align: center;
+    width: 95%;
+}
+
+.form p{
+    text-align: left;
+    color: #343A40;
+    font-size: 18px;
+    width: 80%;
+    text-align: left;
+    /* width: 70%; */
+
+}
+
+input[type=text]{
+    height: 3rem;
+    width: 15rem;
+    outline: none;
+    margin-top: 15px;
+    /* margin-right: 1rem; */
+}
+
+
+
+
+input[type=text]::placeholder{
+    padding-left: 2px;
+}
+
+input[type=email]{
+    height: 3rem;
+    width: 15.2rem;
+    margin-right: 10px;
+    outline: none;
+}
+
+input[type=email]::placeholder {
+    padding-left: 2px;
+}
+
+
+input[type=tel]{
+    height: 3rem;
+    width: 15.2rem;
+    outline: none;
+    margin-right: 10px;
+}
+
+input[type=tel]::placeholder {
+    padding-left: 2px;
+}
+
+.form button{
+    color: #FFF8FA;
+    background-color: #0069D9;
+    height: 3rem;
+    width: 15.8rem;
+    margin-right: 10px;
+}
+    
+
+
+    /* .container{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    nav ul{
+        visibility: hidden;
+    }
+
+    .branding{
+        width: 100%;
+        height: 100%;
+        font-size: small;
+    }
+
+    .brand h4{
+        position: relative;
+        bottom: 18px;
+        left: 10px;
+        font-size: large;
+
+        color: yellowgreen;
+        
+        background-color: red;
+        width: 10em;
+        width: 1000px;
+    }
+
+
+
+    header img{
+        max-width: 50px;
+        padding-top: 5px;
+    } */
+
+
+}
+
+    
+  
+
+    
