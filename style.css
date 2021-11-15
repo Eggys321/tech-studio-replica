@@ -32,7 +32,7 @@ body{
     line-height: 70px;
 }
 
-.menu{
+/* .menu{
     margin: 0 30px 0 0;
 }
 
@@ -59,7 +59,7 @@ label{
 
 #toggle{
     display: none;
-}
+} */
 
 
 header{
@@ -76,6 +76,7 @@ a{
     padding-left: 20px;
     text-decoration: none;
     font-size: large;
+    
 }
 
 
@@ -109,7 +110,7 @@ a:hover{
     background-image: url(img/bg\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100rem;
+    height: 37rem;
     position: relative;
     bottom: 38px;
     padding-top: 85px;
@@ -237,6 +238,21 @@ input[type=tel]::placeholder {
     background-color: #FFFFFF;
 }
 
+/* sec_3 stats here */
+
+/* .sec_3{
+    background-color: #F9FAFA;
+} */
+
+.sec_3b{
+    /* display: flex; */
+}
+
+/* .sec_3b img{
+    width: 50rem;
+    height: 50rem;
+} */
+
 
 
 
@@ -340,7 +356,14 @@ Mac-http://git-scm.com/download/mac
  To cheq d name and email
 git config user.name */
 
-@media (max-width:320px)  { 
+@media (max-width:425px) {
+
+
+
+    
+}
+
+@media (max-width:425px)  { 
 
     .container{
         width: 92%;
